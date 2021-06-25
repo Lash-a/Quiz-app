@@ -1,0 +1,47 @@
+<div class="container" *ngIf="!service.displayQuestions">
+    <div class="row">
+        <div class="col-md-12">
+            <form #form="ngForm" (submit)="submit(form)">
+
+                <div class="form-group">
+                    <label for="totalQuestions">Number Of Questions:</label>
+                    <input 
+                    type="number" 
+                    class="form-control "
+                    name="totalQuestions" 
+                    id="totalQuestions"
+                    [(ngModel)]="service.totalQuestions"
+                    required
+                    placeholder="Maximum 50 Questions"
+                    min="1"
+                    max="50"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="categorys">Select Category:</label>
+                    <select class="form-control" #categoryList name="categorys" id="categorys">
+                      
+                        <option value="0">Any Category:</option>
+                        <option *ngFor="let category of service.category" 
+                        value="{{category.id}}">{{category.name}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="difficulty" style="display: block;">Select Difficulty:</label>
+                    <select class="form-control" #difficultyList id="difficulty" name="difficulty">
+                      <option  class="form-control"
+                      *ngFor="let diff of difficulty" 
+                      [ngValue]="diff">{{diff}}</option>
+
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

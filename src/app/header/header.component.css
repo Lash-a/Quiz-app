@@ -1,0 +1,9 @@
+.container-fluid{
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-fluid a{
+    font-size: 1.5em;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.container{
+    height: calc(100vh - 162px);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h5{
+    margin-bottom: 20px;
+}
+
+ul li{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.quiz-finish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 120px;
+    height: 2.5em;
+}
