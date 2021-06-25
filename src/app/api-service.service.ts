@@ -11,7 +11,7 @@ import { Category } from './Category';
 export class ApiServiceService {
 
   //სუ რამდენი კითხვაა
-  totalQuestions: number = 10;
+  totalQuestions: number = 4;
   // სირთულე
   difficulty: string;
   // ინახავს კატეგორიას
